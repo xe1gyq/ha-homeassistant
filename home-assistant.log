@@ -1,0 +1,5 @@
+2017-06-10 10:26:33 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/asyncio/selector_events.py", line 662, in _read_ready
+    data = self._sock.recv(self.max_size)
+OSError: [Errno 113] No route to host

@@ -1,0 +1,4 @@
+2017-06-10 12:04:37 ERROR (Thread-3) [homeassistant.util.yaml] mapping values are not allowed here
+  in "/home/hochob/.homeassistant/8128/configuration.yaml", line 47, column 9
+2017-06-10 12:04:37 ERROR (MainThread) [homeassistant.bootstrap] Error loading /home/hochob/.homeassistant/8128/configuration.yaml: mapping values are not allowed here
+  in "/home/hochob/.homeassistant/8128/configuration.yaml", line 47, column 9

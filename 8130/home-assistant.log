@@ -1,0 +1,1 @@
+2017-06-10 12:04:39 ERROR (MainThread) [homeassistant.config] Invalid config for [sensor.mqtt]: required key not provided @ data['state_topic']. Got None. (See ?, line ?). Please check the docs at https://home-assistant.io/components/sensor.mqtt/

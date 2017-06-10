@@ -1,0 +1,8 @@
+2017-06-10 11:57:16 ERROR (Thread-3) [homeassistant.util.yaml] while parsing a block mapping
+  in "/home/hochob/.homeassistant/8125/configuration.yaml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "/home/hochob/.homeassistant/8125/configuration.yaml", line 30, column 2
+2017-06-10 11:57:16 ERROR (MainThread) [homeassistant.bootstrap] Error loading /home/hochob/.homeassistant/8125/configuration.yaml: while parsing a block mapping
+  in "/home/hochob/.homeassistant/8125/configuration.yaml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "/home/hochob/.homeassistant/8125/configuration.yaml", line 30, column 2

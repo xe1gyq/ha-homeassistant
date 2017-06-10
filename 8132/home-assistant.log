@@ -1,0 +1,30 @@
+2017-06-10 11:51:21 ERROR (MainThread) [hbmqtt.broker] Broker startup failed: [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): address already in use
+2017-06-10 11:51:21 ERROR (MainThread) [homeassistant.components.mqtt.server] Error initializing MQTT server
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 823, in create_server
+    sock.bind(sa)
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hochob/.homeassistant/8132/deps/hbmqtt/broker.py", line 275, in start
+    subprotocols=['mqtt'])
+  File "/home/hochob/.homeassistant/8132/deps/websockets/server.py", line 365, in serve
+    server = yield from loop.create_server(factory, host, port, **kwds)
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 827, in create_server
+    % (sa, err.strerror.lower()))
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/homeassistant/components/mqtt/server.py", line 48, in async_start
+    yield from broker.start()
+  File "/home/hochob/.homeassistant/8132/deps/hbmqtt/broker.py", line 291, in start
+    raise BrokerException("Broker instance can't be started: %s" % e)
+hbmqtt.broker.BrokerException: Broker instance can't be started: [Errno 98] error while attempting to bind on address ('0.0.0.0', 8080): address already in use
+2017-06-10 11:51:21 ERROR (MainThread) [homeassistant.components.mqtt] Unable to start MQTT broker.
+2017-06-10 11:51:21 ERROR (MainThread) [homeassistant.setup] Setup failed for mqtt: Component failed to initialize.
+2017-06-10 11:51:21 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of light.mqtt. Setup failed for dependencies: mqtt
+2017-06-10 11:51:21 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform light.mqtt: Could not setup all dependencies.
